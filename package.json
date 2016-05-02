@@ -4,7 +4,12 @@
   "description": "For WebStorm at ng-conf, an Angular2 todo app",
   "main": "src/main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run lite ",
+    "lite": "lite-server",
+    "typings": "typings",
+    "postinstall": "typings install",
+    "lint": "tslint src/**.ts",
+    "test": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
